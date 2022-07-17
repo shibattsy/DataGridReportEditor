@@ -65,10 +65,10 @@ const ColumnsList = ({ columns, setColumns }) => {
         })}
       </div>
       <div
-        className="add-column"
+        className="add-btn"
         onClick={() => {
           if (useColumns.length > 0) {
-            return setCreateMode(true);
+            return setCreateMode(!createMode);
           } else {
             return alert(
               'Невозможно добавить новую колонку. Закончились неиспользованные данные в файле data.js'
@@ -76,7 +76,7 @@ const ColumnsList = ({ columns, setColumns }) => {
           }
         }}
       >
-        Добавить колонку
+        {createMode ? 'Закрыть форму добавления колонки' : 'Добавить колонку'}
       </div>
       {createMode && (
         <AddColumn addNewColumn={addNewColumn} columns={useColumns} />

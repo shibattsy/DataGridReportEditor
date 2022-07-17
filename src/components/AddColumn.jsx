@@ -12,7 +12,7 @@ const AddColumn = ({ columns, addNewColumn }) => {
   return (
     <div className="add-column">
       <div className="add-column__wrap">
-        <label htmlFor="dataField">Data Field</label>
+        <label htmlFor="dataField">Data Field:</label>
         <select
           name="dataField"
           id="dataField"
@@ -29,11 +29,11 @@ const AddColumn = ({ columns, addNewColumn }) => {
         </select>
       </div>
       <div className="add-column__wrap">
-        <label htmlFor="caption">Caption</label>
+        <label htmlFor="caption">Caption:</label>
         <input ref={caption} type="text" id="caption" />
       </div>
       <div className="add-column__wrap">
-        <label htmlFor="dataType">Data Type</label>
+        <label htmlFor="dataType">Data Type:</label>
         <select
           name="dataType"
           id="dataType"
@@ -46,7 +46,7 @@ const AddColumn = ({ columns, addNewColumn }) => {
         </select>
       </div>
       <div className="add-column__wrap">
-        <label htmlFor="format">Format</label>
+        <label htmlFor="format">Format:</label>
         <select name="format" id="format" ref={format} selected="selected">
           <option value="">Default</option>
           <option value="percent">Percent</option>
@@ -54,7 +54,7 @@ const AddColumn = ({ columns, addNewColumn }) => {
         </select>
       </div>
       <div className="add-column__wrap">
-        <label htmlFor="format">Alignment</label>
+        <label htmlFor="format">Alignment:</label>
         <select
           name="alignment"
           id="alignment"
